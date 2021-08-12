@@ -1,6 +1,7 @@
 // Copy and paste this code into the NIS macro editor 
 // Manually set the exposure, binning, etc
 // Last Update: 12/9/2020
+// Author: Trevor Nash
 
 
 // Check COM ports for stage and Arduino! 
