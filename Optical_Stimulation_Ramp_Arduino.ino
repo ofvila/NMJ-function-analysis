@@ -76,7 +76,10 @@ void loop()
       if (serialIn.equalsIgnoreCase("Start"))
       {
           Serial.println("Starting Ramp Protocol");
-
+	        // Initial 1s delay with Red LED OFF
+           startCode = millis();
+           digitalWrite(2, LOW);
+           while ((millis()-startCode) < 1000);	
           // 5s delay between turning on the red LED and the start of the stimulation
           startSync = millis();
           delay(1000);
