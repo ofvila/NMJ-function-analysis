@@ -82,7 +82,6 @@ void loop()
            while ((millis()-startCode) < 1000);	
           // 5s delay between turning on the red LED and the start of the stimulation
           startSync = millis();
-          delay(1000);
           digitalWrite(2, HIGH);
           while ((millis()-startSync) < 5000);
             
@@ -105,7 +104,8 @@ void loop()
             dynamicFrequency = dynamicFrequency - ddFrequency;	// Updates the dynamic frequency
           }
           
-          digitalWrite(2, LOW);					// Turns off the red LED when finished
+         delay(1500);
+	 digitalWrite(2, LOW);					// Turns off the red LED when finished
 
         }
 
